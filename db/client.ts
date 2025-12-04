@@ -1,11 +1,11 @@
-import { Pool } from 'pg';
-import { drizzle } from 'drizzle-orm/node-postgres';
-import { attachDatabasePool } from '@vercel/functions';
+import { Pool } from "pg"
+import { drizzle } from "drizzle-orm/node-postgres"
+import { attachDatabasePool } from "@vercel/functions"
 
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL!,
-});
+  connectionString: process.env.POSTGRES_URL || process.env.DATABASE_URL!,
+})
 
-attachDatabasePool(pool);
+attachDatabasePool(pool)
 
-export const db = drizzle(pool);
+export const db = drizzle(pool)
