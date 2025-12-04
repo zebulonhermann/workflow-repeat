@@ -548,4 +548,3 @@ export function ContractChatbot({ id, initialMessages }: { id: string; initialMe
     </>
   )
 }
-

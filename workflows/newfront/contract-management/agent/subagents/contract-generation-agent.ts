@@ -127,4 +127,3 @@ Use your lookupTemplate tool to get the template structure, then generate a comp
     generatedAt: new Date().toISOString(),
   };
 }
-

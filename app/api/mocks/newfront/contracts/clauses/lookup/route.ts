@@ -130,4 +130,3 @@ export async function POST(req: Request) {
     definition: clause,
   });
 }
-

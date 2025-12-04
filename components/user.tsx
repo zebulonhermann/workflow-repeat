@@ -15,4 +15,3 @@ export function User({ className }: { className?: string }) {
       </svg>
     )
   }
-  

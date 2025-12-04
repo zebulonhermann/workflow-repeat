@@ -30,4 +30,3 @@ export async function POST(req: Request) {
     success: true,
   });
 }
-

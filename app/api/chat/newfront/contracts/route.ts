@@ -131,4 +131,3 @@ export async function POST(req: Request) {
   // @ts-ignore
   return createUIMessageStreamResponse({ stream: agentStream });
 }
-

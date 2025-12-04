@@ -1,5 +1,3 @@
-
-
 export async function POST(req: Request) {
   // In a real system, send an email/Slack. For demo, just log.
   const body = await req.json();

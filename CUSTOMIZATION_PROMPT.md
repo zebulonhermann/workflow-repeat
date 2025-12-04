@@ -44,7 +44,7 @@ The current customer is **"newfront"** (case-sensitive). You need to replace it 
 #### 1.1 Directory Structure
 
 **Create new customer directories:**
-```bash
+\`\`\`bash
 # Workflows
 workflows/{customer}/{workflow-name}/
 
@@ -58,7 +58,7 @@ app/{customer}/
 
 # Components
 components/{customer}/
-```
+\`\`\`
 
 **Example:** If customer is "acme", create:
 - `workflows/acme/contract-management/`
@@ -127,7 +127,7 @@ Search and replace `newfront` → `{customer}` in:
 
 The system prompt in your main agent should include:
 
-```typescript
+\`\`\`typescript
 const baseSystemPrompt = `You are an AI assistant for {CustomerName}, {customer description}.
 
 **Your role:** {What the agent does}
@@ -157,7 +157,7 @@ const baseSystemPrompt = `You are an AI assistant for {CustomerName}, {customer 
 This is a demonstration of AI SDK 6, Workflows, and AI Gateway capabilities. Showcase {key features to highlight}.
 
 Be {tone/voice}. {Additional guidance}.`;
-```
+\`\`\`
 
 ---
 
@@ -373,7 +373,7 @@ Use this checklist to ensure you've covered everything:
 ## Quick Reference: File Locations
 
 ### Current Structure (Newfront Example)
-```
+\`\`\`
 workflows/newfront/contract-management/
   ├── workflow.ts          # Main orchestration
   ├── steps.ts             # Durable steps
@@ -389,10 +389,10 @@ app/api/chat/newfront/contracts/route.ts
 app/api/workflows/newfront/contracts/approve/route.ts
 app/newfront/contracts/page.tsx
 components/newfront/contract-chatbot.tsx
-```
+\`\`\`
 
 ### Your Structure (Replace "newfront" with your customer)
-```
+\`\`\`
 workflows/{customer}/{workflow-name}/
   ├── workflow.ts
   ├── steps.ts
@@ -405,7 +405,7 @@ app/api/chat/{customer}/{workflow}/route.ts
 app/api/workflows/{customer}/{workflow}/approve/route.ts
 app/{customer}/{workflow}/page.tsx
 components/{customer}/{workflow}-chatbot.tsx
-```
+\`\`\`
 
 ---
 
@@ -469,4 +469,3 @@ This demo is designed to showcase Vercel AI Gateway and Workflows capabilities. 
 The goal is to show how these technologies work in a real-world scenario, adapted to your customer's domain and use case.
 
 Good luck with your customization! 🚀
-

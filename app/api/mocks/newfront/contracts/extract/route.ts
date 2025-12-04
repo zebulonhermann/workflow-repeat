@@ -63,4 +63,3 @@ export async function POST(req: Request) {
     extractedAt: new Date().toISOString(),
   });
 }
-

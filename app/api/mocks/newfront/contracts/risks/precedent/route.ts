@@ -154,4 +154,3 @@ export async function POST(req: Request) {
     analysis: `Found ${precedents.length} similar contracts. ${precedents.filter(p => p.riskLevel === 'high').length} had high-risk issues that should be reviewed.`,
   });
 }
-

@@ -65,4 +65,3 @@ export async function POST(req: Request) {
     description: `Template structure for ${contractType} contract${jurisdiction ? ` in ${jurisdiction}` : ''}`,
   });
 }
-

@@ -32,4 +32,3 @@ export async function POST(req: Request) {
     diffUrl: `/newfront/contracts/redline/${Date.now()}`,
   });
 }
-

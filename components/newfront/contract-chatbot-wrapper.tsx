@@ -38,4 +38,3 @@ export async function ContractChatbotWrapper() {
 
   return <ContractChatbot id={chatId} initialMessages={initialMessages} />
 }
-
